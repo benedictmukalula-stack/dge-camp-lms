@@ -2,6 +2,37 @@
 
 A comprehensive Learning Management System (LMS) platform integrated with Builder.io for marketing, supporting course management, learner tracking, corporate training, and advanced reporting.
 
+## ⚡ Quick Start
+
+### Fastest Way to Run
+
+```bash
+# 1. Clone and navigate
+git clone https://github.com/benedictmukalula-stack/dge-camp-lms.git
+cd dge-camp-lms
+
+# 2. Run the startup script
+./start.sh
+```
+
+The script will:
+- Create `.env` from `.env.example` if needed
+- Install dependencies
+- Generate Prisma client
+- Start the development server at http://localhost:3000
+
+### Health Check
+
+Visit http://localhost:3000/api/health to verify the app is running.
+
+### Manual Start
+
+```bash
+npm install                # Install dependencies
+npx prisma generate        # Generate Prisma client
+npm run dev                # Start dev server
+```
+
 ## 🌟 Features
 
 ### Marketing & Discovery
