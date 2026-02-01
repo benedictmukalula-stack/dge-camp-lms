@@ -1,10 +1,5 @@
 import NextAuth from "next-auth";
-import type { NextAuthOptions } from "next-auth";
-
-// Minimal NextAuth config: no providers yet, no DB access at build time.
-export const authOptions: NextAuthOptions = {
-  providers: [],
-};
+import { authOptions } from "@/lib/auth";
 
 const handler = NextAuth(authOptions);
 
